@@ -1,0 +1,8 @@
+.navigationBar-container{
+    background-color:black;
+    padding: 30px;
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    user-select: none;
+}

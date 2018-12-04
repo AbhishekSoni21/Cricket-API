@@ -1,0 +1,24 @@
+.header-container{
+    
+}
+
+.header-container-wrapper{
+    display: flex;
+    padding: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(119, 170, 51);
+    justify-content: flex-start
+}
+
+.navigation-bar-container{
+    display: flex;
+    color: white;
+}
+
+.header-logo{
+    width: 10vw;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: xx-large;
+    user-select: none;
+}
