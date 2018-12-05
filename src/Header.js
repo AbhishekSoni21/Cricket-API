@@ -1,12 +1,48 @@
 import React, { Component } from 'react';
 import NavigationBar from './NavigationBar';
-import './Css/Header.css'
+import './Css/Header.css';
+import UpcomingMatch from './Module/UpcomingMatches';
+import MatchCalendar from './Module/MatchCalendar';
+import CricketScore from './Module/CricketScores';
+import PlayerStatsBio from './Module/PlayerStatsBio';
+import PlayerFinder from './Module/PlayerFinder';
 class Header extends Component {
     constructor(props) {
         super(props);
-        this.state = {  }
+        this.state = { 
+            currentNav:'',
+            dashboard:'',
+         }
+    }
+
+    updateNavSelection = (value) => {
+        this.setState({
+            currentNav:value
+        })
+    }
+
+    generateBody = () => {
+        console.log(this.state.currentNav);
+        if(this.state.currentNav==='Upcoming Matches'){
+                return <UpcomingMatch/>
+
+        }
+        else if(this.state.currentNav==='Match Calendar'){
+                return <MatchCalendar/>
+        }
+        else if(this.state.currentNav==='Cricket Scores'){
+                return <CricketScore/>
+        }
+        else if(this.state.currentNav==='Player Stats and Bio'){
+               return <PlayerStatsBio/>
+        }
+        else if(this.state.currentNav==='Player Finder'){
+                return <PlayerFinder/>
+        }
     }
     render() { 
+        console.log("current selection is",this.state.currentNav);
+        
         return ( 
             <div className='header-container'>
                 <div className='header-container-wrapper'>
@@ -14,8 +50,14 @@ class Header extends Component {
                         {"Cric API"}
                     </div>
                     <div className='navigation-bar-container'>
-                        <NavigationBar/>
+                        <NavigationBar 
+                            currentNav={this.state.currentNav}
+                            updateNavSelection={this.updateNavSelection}                        
+                        />
                     </div>
+                </div>
+                <div>
+                {this.generateBody()}
                 </div>
             </div>
         );

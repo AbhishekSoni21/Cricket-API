@@ -6,3 +6,10 @@
     justify-content: space-around;
     user-select: none;
 }
+
+.nav-link{
+    /* background-color: blue */
+}
+.nav-link:hover{
+    background-color: darkgray
+}
