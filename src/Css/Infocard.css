@@ -2,14 +2,15 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
+    margin-left: 15px
 }
 
 .card-container{
     border:2px solid;
     border-collapse: collapse;
+    border-radius:20px;
     width: 30vw;
-    margin-bottom: 5px;
-    margin-left: 5px;
+    margin: 5px;
     background-color: aquamarine
 }
 
