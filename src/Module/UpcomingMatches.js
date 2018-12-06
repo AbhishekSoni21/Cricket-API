@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import Infocard from '../Components/Infocard';
-import LoadingOverlay from 'react-loading-overlay';
+//import LoadingOverlay from 'react-loading-overlay';
 class UpcomingMatch extends Component {
     constructor(props) {
         super(props);
         this.state = { 
             matchData:"",
-         }
+        }
     }
 
     componentDidMount(){
@@ -23,8 +23,8 @@ class UpcomingMatch extends Component {
         console.log("this.state.matchData",this.state.matchData)
         return ( 
             <div className="result-container">
-            {"Upcoming Matches"}
-            {this.state.matchData.length>0 ? <div className="matchCard-container"><Infocard matchData={this.state.matchData}/></div> : "No Data to display"}
+                <div className="result-display-header">{"Upcoming Matches"}</div>
+                {this.state.matchData.length>0 ? <div className="matchCard-container"><Infocard matchData={this.state.matchData}/></div> : "No Data to display"}
             </div> 
             
         );
