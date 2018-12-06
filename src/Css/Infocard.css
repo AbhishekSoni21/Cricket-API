@@ -1,0 +1,31 @@
+.matchCard-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.card-container{
+    border:2px solid;
+    border-collapse: collapse;
+    width: 30vw;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    background-color: aquamarine
+}
+
+.label-container{
+    display: flex;
+    padding: 5px 10px 5px 10px;
+    
+}
+
+.label{
+    padding-right: 10px;
+    padding-left:10px;
+    width:50vw
+}
+
+.label-value{
+    width:50vw
+    
+}

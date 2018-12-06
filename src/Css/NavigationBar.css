@@ -13,3 +13,8 @@
 .nav-link:hover{
     background-color: darkgray
 }
+
+.nav-link--selected{
+    background-color: white;
+    color: black
+}
