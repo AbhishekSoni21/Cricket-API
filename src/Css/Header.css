@@ -1,6 +1,10 @@
 .header-container{
 }
 
+.dashboard-container{
+    height: 580px
+}
+
 .header-container-wrapper{
     display: flex;
     padding: 30px;

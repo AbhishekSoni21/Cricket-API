@@ -56,7 +56,7 @@ class Header extends Component {
                         />
                     </div>
                 </div>
-                <div>
+                <div className="dashboard-container">
                 {this.generateBody()}
                 </div>
             </div>

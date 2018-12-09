@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import Infocard from '../Components/Infocard';
-//import LoadingOverlay from 'react-loading-overlay';
+import LoadingOverlay from 'react-loading-overlay';
+import '../Css/loader.css';
 class UpcomingMatch extends Component {
     constructor(props) {
         super(props);
         this.state = { 
             matchData:"",
+            isActive:true
         }
     }
 
@@ -16,17 +18,24 @@ class UpcomingMatch extends Component {
         fetch(UrlToFetchData)
         .then(response => response.json())
         .then(data => this.setState({
-            matchData:data.matches
+            matchData:data.matches,
+            isActive:false
         }));
     }
     render() { 
         console.log("this.state.matchData",this.state.matchData)
-        return ( 
-            <div className="result-container">
+        return (
+            <LoadingOverlay
+                className="loader-wrapper"
+                active={this.state.isActive}
+                spinner
+                text='Loading your content...'
+                >
+                <div className="result-container">
                 <div className="result-display-header">{"Upcoming Matches"}</div>
-                {this.state.matchData.length>0 ? <div className="matchCard-container"><Infocard matchData={this.state.matchData}/></div> : "No Data to display"}
-            </div> 
-            
+                {this.state.matchData.length>0 ? <div className="matchCard-container"><Infocard matchData={this.state.matchData}/></div> : ""}
+            </div>
+            </LoadingOverlay> 
         );
     }
 }
