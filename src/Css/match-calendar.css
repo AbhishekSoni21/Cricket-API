@@ -1,0 +1,12 @@
+.ag-grid-container{
+    height: 200px; 
+    width: 601px 
+}
+
+.grid-container{
+    background-color: brown
+}
+
+.match-calendar-container{
+    margin: 10px
+}

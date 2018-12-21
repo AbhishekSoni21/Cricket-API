@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NavigationBar from './NavigationBar';
 import './Css/Header.css';
+import './Css/upcomingMatch.css';
 import UpcomingMatch from './Module/UpcomingMatches';
 import MatchCalendar from './Module/MatchCalendar';
 import CricketScore from './Module/CricketScores';
@@ -12,7 +13,8 @@ class Header extends Component {
         this.state = { 
             currentNav:'',
             dashboard:'',
-         }
+            selectedDashboardCss:''
+        }
     }
 
     updateNavSelection = (value) => {
@@ -22,9 +24,9 @@ class Header extends Component {
     }
 
     generateBody = () => {
-        console.log(this.state.currentNav);
+        console.log("this.state.currentNav",this.state.currentNav);
         if(this.state.currentNav==='Upcoming Matches'){
-                return <UpcomingMatch/>
+                return <UpcomingMatch className="upcoming-match-container"/>
 
         }
         else if(this.state.currentNav==='Match Calendar'){
@@ -34,7 +36,7 @@ class Header extends Component {
                 return <CricketScore/>
         }
         else if(this.state.currentNav==='Player Stats and Bio'){
-               return <PlayerStatsBio/>
+                return <PlayerStatsBio/>
         }
         else if(this.state.currentNav==='Player Finder'){
                 return <PlayerFinder/>
@@ -57,7 +59,7 @@ class Header extends Component {
                     </div>
                 </div>
                 <div className="dashboard-container">
-                {this.generateBody()}
+                <div className={this.state.selectedDashboardCss}>{this.generateBody()}</div>
                 </div>
             </div>
         );

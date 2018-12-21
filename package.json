@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "ag-grid": "^18.1.2",
+    "ag-grid-community": "^19.1.4",
     "ag-grid-react": "^19.1.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "react-dom-factories": "^1.0.2",
     "react-loading-overlay": "^1.0.0",
     "react-scripts": "2.1.1"
   },
