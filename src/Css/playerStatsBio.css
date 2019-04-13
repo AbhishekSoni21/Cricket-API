@@ -1,0 +1,112 @@
+.playerStatsMain {
+  display: flex;
+  flex-direction: column;
+}
+
+.statisticsDom {
+  width: 100%;
+}
+
+.playerStatsBio-container-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.playerStatsBio-container {
+  width: 80vw;
+}
+
+.image-container {
+  width: 20vw;
+}
+.label-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.player-label {
+  width: 20%;
+  font-weight: 600;
+}
+
+.label-data {
+  width: 80%;
+}
+
+.no-data {
+  position: absolute;
+  margin-top: 30vh;
+  margin-left: 42vw;
+}
+
+.data-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 8%;
+  border: 1px solid;
+  text-align: center;
+}
+
+.bowl-key {
+  width: 100%;
+  border-bottom: 1px solid;
+  background-color: aqua;
+}
+.bowl-value {
+  width: 100%;
+}
+
+.bowl-category {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  margin-right: 10%;
+}
+
+.bat-key {
+  width: 100%;
+  border-bottom: 1px solid;
+  background-color: aqua;
+}
+
+.bat-value {
+  width: 100%;
+}
+
+.bat-category {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  margin-right: 10%;
+}
+
+.category-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.main-category {
+  width: 100%;
+}
+
+.bowl {
+}
+
+.category-name {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.category-container-wrapper {
+  width: 100%;
+}
+
+.bowling-section,
+.batting-section {
+  text-align: center;
+  font-weight: 800;
+  font-size: 20px;
+}

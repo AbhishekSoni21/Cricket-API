@@ -1,32 +1,30 @@
-.matchCard-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    margin-left: 15px
+.matchCard-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-left: 15px;
 }
 
-.card-container{
-    border:2px solid;
-    border-collapse: collapse;
-    border-radius:20px;
-    width: 30vw;
-    margin: 5px;
-    background-color: aquamarine
+.card-container {
+  border: 2px solid;
+  border-collapse: collapse;
+  border-radius: 20px;
+  width: 30vw;
+  margin: 5px;
+  background-color: #3fc3ee;
 }
 
-.label-container{
-    display: flex;
-    padding: 5px 10px 5px 10px;
-    
+.label-container {
+  display: flex;
+  padding: 5px 10px 5px 10px;
 }
 
-.label{
-    padding-right: 10px;
-    padding-left:10px;
-    width:50vw
+.label {
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 50vw;
 }
 
-.label-value{
-    width:50vw
-    
+.label-value {
+  width: 50vw;
 }

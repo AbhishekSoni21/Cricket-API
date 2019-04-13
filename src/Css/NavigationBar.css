@@ -1,20 +1,28 @@
-.navigationBar-container{
-    background-color:black;
-    padding: 30px;
-    width: 80vw;
-    display: flex;
-    justify-content: space-around;
-    user-select: none;
+.navigationBar-container {
+  background-color: black;
+  padding: 30px;
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  user-select: none;
+  border-radius: 10px;
 }
 
-.nav-link{
-    /* background-color: blue */
+.nav-link {
+  width: 12vw;
+  text-align: center;
+  line-height: 25px;
 }
-.nav-link:hover{
-    background-color: darkgray
+.nav-link:hover {
+  background-color: darkgray;
+  border-radius: 10px;
 }
 
-.nav-link--selected{
-    background-color: white;
-    color: black
+.nav-link--selected {
+  background-color: rgb(119, 170, 51);
+  color: black;
+  border-radius: 10px;
+  width: 12vw;
+  text-align: center;
+  line-height: 25px;
 }

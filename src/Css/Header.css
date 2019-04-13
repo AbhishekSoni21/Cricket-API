@@ -1,45 +1,91 @@
-.header-container{
+.header-container {
+  background-color: beige;
 }
 
-.dashboard-container{
-    height: 580px;
-    margin: 10px
+.dashboard-container {
+  height: 100vh;
+  background-color: beige;
 }
 
-.header-container-wrapper{
-    display: flex;
-    padding: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(119, 170, 51);
-    justify-content: flex-start
+.header-container-wrapper {
+  display: flex;
+  padding: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(119, 170, 51);
+  justify-content: flex-start;
 }
 
-.navigation-bar-container{
-    display: flex;
-    color: white;
-    width: 80vw;
+.navigation-bar-container {
+  display: flex;
+  color: white;
+  width: 80vw;
 }
 
-.header-logo{
-    width: 10vw;
-    margin-top: 20px;
-    margin-left: 10px;
-    font-size: xx-large;
-    user-select: none;
+.header-logo {
+  width: 10vw;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: xx-large;
+  user-select: none;
+  font-family: "Helvertica Neue";
+  font-weight: 600;
+  animation: heade;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 
-.result-display-header{
-    text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20px;
-    margin: 10px
+.header-logo:hover {
 }
 
-.upcoming-match-container{
-    height: 580px
+@keyframes heade {
+  from {
+    /* transform: rotateX(360); */
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
+
+  to {
+    /* transform: rotateX(180deg); */
+  }
 }
 
-.match-calendar-container{
-    height: 580px;
-    display: flex
+.result-display-header {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.upcoming-match-container {
+  height: 580px;
+}
+
+.match-calendar-container {
+  height: 580px;
+  display: flex;
+}
+
+.welcome {
+  background-image: url(https://www.cricapi.com/images/banner.jpg);
+  height: 100vh;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.header-app {
+  font-size: 2.5em;
+  margin-top: 130px;
+  text-shadow: 2px 2px black;
+}
+
+.app-message {
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 20px;
 }

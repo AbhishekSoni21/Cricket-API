@@ -30,3 +30,8 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  font-family: "Helvertica Neue";
+  user-select: none;
+}
